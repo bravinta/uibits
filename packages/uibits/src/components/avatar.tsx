@@ -3,7 +3,7 @@ import { getInitials } from "@/utils/getInitials";
 import { HTMLAttributes } from "react";
 
 interface AvatarProps extends HTMLAttributes<HTMLDivElement> {
-  picture?: string;
+  src?: string;
   fallback: string;
 }
 
@@ -19,11 +19,11 @@ export const Avatar = (props: AvatarProps) => {
       )}
     >
       {/* Picture */}
-      {props.picture && (
+      {props.src && (
         <img
           draggable={false}
           className="absolute top-0 left-0 w-full h-full aspect-square object-cover"
-          src={props.picture}
+          src={props.src}
         />
       )}
 
