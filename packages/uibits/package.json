@@ -1,9 +1,8 @@
 {
   "name": "uibits",
-  "private": true,
   "version": "0.0.1",
   "type": "module",
-  "author": "Bravinta",
+  "author": "bravinta",
 
   "exports": {
     ".": {
