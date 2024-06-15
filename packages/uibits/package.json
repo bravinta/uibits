@@ -1,11 +1,10 @@
 {
   "name": "uibits",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
-  "files": [
-    "dist"
-  ],
+  "author": "Bravinta",
+
   "exports": {
     ".": {
       "import": "./dist/uibits.es.js",
@@ -17,11 +16,28 @@
   "main": "./dist/uibits.umd.js",
   "module": "./dist/uibits.es.js",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bravinta/uibits"
+  },
+  "homepage": "https://uibits.bravinta.com",
+  "bugs": {
+    "url": "https://github.com/bravinta/uibits/issues"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/bravinta"
+  },
   "scripts": {
     "dev": "vite build --watch",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
+
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
