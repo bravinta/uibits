@@ -14,7 +14,7 @@ export const Avatar = (props: AvatarProps) => {
     <div
       {...props}
       className={cn(
-        "bg-neutral-200 h-10 w-10 rounded-full flex items-center justify-center overflow-hidden relative",
+        "bg-neutral-100 h-10 w-10 rounded-full flex items-center justify-center overflow-hidden relative select-none",
         props.className
       )}
     >
